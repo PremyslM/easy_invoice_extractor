@@ -21,3 +21,4 @@ Rules:
 - Credit note ("Dobropis", "Opravný danňový doklad") has a negative amount. Keep the sign.
 - If due date is given as days from issue date, calculate it and set due_date_calculated to true.
 - If a value is missing or unreadable, return null. NEVER guess.
+- If There are invoices where the supplier is a VAT payer, yet the VAT amount is 0—for instance, in cases of the reverse charge mechanism, supplies to another EU member state, or exports. In these instances, 0 is the correct value, while null is incorrect. Otherwise its Null.
