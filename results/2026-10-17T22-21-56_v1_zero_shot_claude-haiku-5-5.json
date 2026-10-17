@@ -1,0 +1,617 @@
+{
+  "timestamp": "2026-10-17T22:21:56",
+  "git_commit": "f19846e",
+  "prompt_version": "v1_zero_shot",
+  "model": "claude-haiku-5-5",
+  "n_invoices": 30,
+  "strict_json": 0,
+  "parsed": 30,
+  "counts": {
+    "correct": 131,
+    "wrong": 44,
+    "missed": 32,
+    "hallucinated": 3
+  },
+  "per_field": {
+    "document_type": {
+      "correct": 15,
+      "total": 30
+    },
+    "supplier": {
+      "correct": 30,
+      "total": 30
+    },
+    "ico": {
+      "correct": 27,
+      "total": 30
+    },
+    "amount_due": {
+      "correct": 0,
+      "total": 30
+    },
+    "vat": {
+      "correct": 0,
+      "total": 30
+    },
+    "currency": {
+      "correct": 29,
+      "total": 30
+    },
+    "due_date": {
+      "correct": 30,
+      "total": 30
+    }
+  },
+  "review": {
+    "auto_ok": 0,
+    "auto_with_errors": 0,
+    "caught": 30,
+    "false_alarm": 0
+  },
+  "tokens_in": 93840,
+  "tokens_out": 93840,
+  "errors": [
+    {
+      "invoice": "INV-01.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura – daňový doklad"
+    },
+    {
+      "invoice": "INV-01.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 244807.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-01.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 42487.2,
+      "actual": "CZ76234550"
+    },
+    {
+      "invoice": "INV-02.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura – daňový doklad"
+    },
+    {
+      "invoice": "INV-02.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 56518.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-02.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 7864.38,
+      "actual": "CZ39720616"
+    },
+    {
+      "invoice": "INV-03.png",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura - daňový doklad"
+    },
+    {
+      "invoice": "INV-03.png",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 167397.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-03.png",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 29052.45,
+      "actual": "CZ67965776"
+    },
+    {
+      "invoice": "INV-04.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 27957.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-04.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 4716.71,
+      "actual": "CZ47378476"
+    },
+    {
+      "invoice": "INV-05.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura – daňový doklad"
+    },
+    {
+      "invoice": "INV-05.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 19467.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-05.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 2367.0,
+      "actual": "CZ64572951"
+    },
+    {
+      "invoice": "INV-06.jpg",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura - daňový doklad"
+    },
+    {
+      "invoice": "INV-06.jpg",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 202172.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-06.jpg",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 34177.35,
+      "actual": "CZ90555236"
+    },
+    {
+      "invoice": "INV-07.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 26789.4,
+      "actual": null
+    },
+    {
+      "invoice": "INV-07.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 4649.4,
+      "actual": "CZ96542004"
+    },
+    {
+      "invoice": "INV-08.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura – daňový doklad"
+    },
+    {
+      "invoice": "INV-08.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 509454.09,
+      "actual": null
+    },
+    {
+      "invoice": "INV-08.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 82411.13,
+      "actual": "CZ80236057"
+    },
+    {
+      "invoice": "INV-09.jpg",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura - daňový doklad"
+    },
+    {
+      "invoice": "INV-09.jpg",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 22197.3,
+      "actual": null
+    },
+    {
+      "invoice": "INV-09.jpg",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 3147.3,
+      "actual": "CZ57033749"
+    },
+    {
+      "invoice": "INV-10.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 212420.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-10.pdf",
+      "field": "vat",
+      "type": "missed",
+      "expected": 0.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-11.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura – daňový doklad"
+    },
+    {
+      "invoice": "INV-11.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 30795.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-11.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 5344.5,
+      "actual": "CZ65421433"
+    },
+    {
+      "invoice": "INV-12.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura - daňový doklad (tax invoice)"
+    },
+    {
+      "invoice": "INV-12.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 74280.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-12.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 12985.35,
+      "actual": "CZ46104089"
+    },
+    {
+      "invoice": "INV-13.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 1223.74,
+      "actual": null
+    },
+    {
+      "invoice": "INV-13.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "SK6447308954"
+    },
+    {
+      "invoice": "INV-14.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 1684.95,
+      "actual": null
+    },
+    {
+      "invoice": "INV-14.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 299.46,
+      "actual": "SK1080626253"
+    },
+    {
+      "invoice": "INV-15.png",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktúra"
+    },
+    {
+      "invoice": "INV-15.png",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 1559.9,
+      "actual": null
+    },
+    {
+      "invoice": "INV-15.png",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "SK5582759292"
+    },
+    {
+      "invoice": "INV-16.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 1992.28,
+      "actual": null
+    },
+    {
+      "invoice": "INV-16.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": {
+        "supplier_vat_id": "DE525124740",
+        "vat_amount": 0.0,
+        "reverse_charge": true
+      }
+    },
+    {
+      "invoice": "INV-17.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 986.11,
+      "actual": null
+    },
+    {
+      "invoice": "INV-17.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 102.77,
+      "actual": "DE596471012"
+    },
+    {
+      "invoice": "INV-18.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Rechnung (Invoice)"
+    },
+    {
+      "invoice": "INV-18.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 22528.6,
+      "actual": null
+    },
+    {
+      "invoice": "INV-18.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "DE914144116"
+    },
+    {
+      "invoice": "INV-19.jpg",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 7114.89,
+      "actual": null
+    },
+    {
+      "invoice": "INV-19.jpg",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 914.36,
+      "actual": "DE922401556"
+    },
+    {
+      "invoice": "INV-20.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 907.85,
+      "actual": null
+    },
+    {
+      "invoice": "INV-20.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "ATU78236606"
+    },
+    {
+      "invoice": "INV-21.jpg",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Rechnung (Invoice)"
+    },
+    {
+      "invoice": "INV-21.jpg",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 2422.17,
+      "actual": null
+    },
+    {
+      "invoice": "INV-21.jpg",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 395.96,
+      "actual": "ATU13458275"
+    },
+    {
+      "invoice": "INV-21.jpg",
+      "field": "currency",
+      "type": "wrong",
+      "expected": "EUR",
+      "actual": "CZK"
+    },
+    {
+      "invoice": "INV-22.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "FAKTURA VAT"
+    },
+    {
+      "invoice": "INV-22.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 3105.46,
+      "actual": null
+    },
+    {
+      "invoice": "INV-22.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "PL4016101527"
+    },
+    {
+      "invoice": "INV-23.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura VAT"
+    },
+    {
+      "invoice": "INV-23.pdf",
+      "field": "ico",
+      "type": "hallucinated",
+      "expected": null,
+      "actual": "912056075"
+    },
+    {
+      "invoice": "INV-23.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 14481.39,
+      "actual": null
+    },
+    {
+      "invoice": "INV-23.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 2833.53,
+      "actual": "PL2538647141"
+    },
+    {
+      "invoice": "INV-24.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 2070.76,
+      "actual": null
+    },
+    {
+      "invoice": "INV-24.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "GB589893924"
+    },
+    {
+      "invoice": "INV-25.pdf",
+      "field": "ico",
+      "type": "hallucinated",
+      "expected": null,
+      "actual": "20981173"
+    },
+    {
+      "invoice": "INV-25.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 28823.2,
+      "actual": null
+    },
+    {
+      "invoice": "INV-25.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 4803.87,
+      "actual": "GB916830891"
+    },
+    {
+      "invoice": "INV-26.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 12043.53,
+      "actual": null
+    },
+    {
+      "invoice": "INV-26.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": {
+        "supplier_vat_id": null,
+        "customer_tax_id": "CZ92786898",
+        "sales_tax_amount": 0.0,
+        "note": "Export of services; no US sales tax applicable"
+      }
+    },
+    {
+      "invoice": "INV-27.jpg",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 6078.06,
+      "actual": null
+    },
+    {
+      "invoice": "INV-27.jpg",
+      "field": "vat",
+      "type": "missed",
+      "expected": 495.46,
+      "actual": null
+    },
+    {
+      "invoice": "INV-28.pdf",
+      "field": "ico",
+      "type": "hallucinated",
+      "expected": null,
+      "actual": "01-09-298629"
+    },
+    {
+      "invoice": "INV-28.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 773.69,
+      "actual": null
+    },
+    {
+      "invoice": "INV-28.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "HU12071855"
+    },
+    {
+      "invoice": "INV-29.png",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 988.05,
+      "actual": null
+    },
+    {
+      "invoice": "INV-29.png",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 0.0,
+      "actual": "IT64747636427"
+    },
+    {
+      "invoice": "INV-30.pdf",
+      "field": "document_type",
+      "type": "wrong",
+      "expected": "invoice",
+      "actual": "Faktura – daňový doklad"
+    },
+    {
+      "invoice": "INV-30.pdf",
+      "field": "amount_due",
+      "type": "missed",
+      "expected": 116473.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-30.pdf",
+      "field": "vat",
+      "type": "wrong",
+      "expected": 20214.26,
+      "actual": "CZ64572951"
+    }
+  ]
+}

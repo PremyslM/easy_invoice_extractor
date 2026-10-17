@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-10-17T22:25:29",
+  "git_commit": "f19846e",
+  "prompt_version": "v2_rules",
+  "model": "claude-haiku-5-5",
+  "n_invoices": 30,
+  "strict_json": 28,
+  "parsed": 30,
+  "counts": {
+    "correct": 206,
+    "wrong": 1,
+    "missed": 2,
+    "hallucinated": 1
+  },
+  "per_field": {
+    "document_type": {
+      "correct": 30,
+      "total": 30
+    },
+    "supplier": {
+      "correct": 30,
+      "total": 30
+    },
+    "ico": {
+      "correct": 29,
+      "total": 30
+    },
+    "amount_due": {
+      "correct": 30,
+      "total": 30
+    },
+    "vat": {
+      "correct": 28,
+      "total": 30
+    },
+    "currency": {
+      "correct": 29,
+      "total": 30
+    },
+    "due_date": {
+      "correct": 30,
+      "total": 30
+    }
+  },
+  "review": {
+    "auto_ok": 23,
+    "auto_with_errors": 3,
+    "caught": 1,
+    "false_alarm": 3
+  },
+  "tokens_in": 108120,
+  "tokens_out": 108120,
+  "errors": [
+    {
+      "invoice": "INV-10.pdf",
+      "field": "vat",
+      "type": "missed",
+      "expected": 0.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-21.jpg",
+      "field": "currency",
+      "type": "wrong",
+      "expected": "EUR",
+      "actual": "CZK"
+    },
+    {
+      "invoice": "INV-24.pdf",
+      "field": "ico",
+      "type": "hallucinated",
+      "expected": null,
+      "actual": "86052384"
+    },
+    {
+      "invoice": "INV-26.pdf",
+      "field": "vat",
+      "type": "missed",
+      "expected": 0.0,
+      "actual": null
+    }
+  ]
+}

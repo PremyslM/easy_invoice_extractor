@@ -6,6 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from extractor import extract
+from validation import validate
 
 INVOICES_DIR = Path("invoices")
 LABELS_DIR = Path("labels")
@@ -57,6 +58,7 @@ def compare_field(field: str, expected, actual) -> str:
 
 def evaluate(prompt_version: str, model: str = "claude-haiku-5-5") -> dict:
     counts = {"correct": 0, "wrong": 0, "missed": 0, "hallucinated": 0}
+    review = {"auto_ok": 0, "auto_with_errors": 0, "caught": 0, "false_alarm": 0}
     per_field = defaultdict(lambda: {"correct": 0, "total": 0})
     errors = []
     evaluated = strict_ok = parsed_ok = 0
@@ -80,12 +82,14 @@ def evaluate(prompt_version: str, model: str = "claude-haiku-5-5") -> dict:
         strict_ok += is_strict
 
         if data is None:
-            print(f"❌ {invoice.name}: unparseable output")
+            print(f"❌ {invoice.name}: unparseable output → review")
             errors.append({"invoice": invoice.name, "field": "*", "type": "unparseable",
                            "expected": None, "actual": result["raw_text"][:200]})
+            review["caught"] += 1
             continue
         parsed_ok += 1
 
+        invoice_has_error = False
         for field in FIELDS:
             exp, act = expected.get(field), data.get(field)
             outcome = compare_field(field, exp, act)
@@ -94,11 +98,26 @@ def evaluate(prompt_version: str, model: str = "claude-haiku-5-5") -> dict:
             if outcome == "correct":
                 per_field[field]["correct"] += 1
             else:
+                invoice_has_error = True
                 print(f"   {invoice.name}  {outcome:12} {field}: expected {exp!r}, got {act!r}")
                 errors.append({"invoice": invoice.name, "field": field, "type": outcome,
                                "expected": exp, "actual": act})
 
+        issues = validate(data)
+        if issues:
+            print(f"   🔎 {invoice.name} → review: {'; '.join(issues)}")
+            if invoice_has_error:
+                review["caught"] += 1          # validation correctly flagged a bad invoice
+            else:
+                review["false_alarm"] += 1     # flagged, but extraction was fine
+        else:
+            if invoice_has_error:
+                review["auto_with_errors"] += 1  # error slipped through silently (worst case)
+            else:
+                review["auto_ok"] += 1
+
     total = sum(counts.values())
+    auto = review["auto_ok"] + review["auto_with_errors"]
 
     print(f"\n===== {prompt_version} / {model} =====")
     print(f"Clean JSON:      {strict_ok}/{evaluated}")
@@ -108,6 +127,11 @@ def evaluate(prompt_version: str, model: str = "claude-haiku-5-5") -> dict:
     print(f"Missed:          {counts['missed']}")
     print(f"Hallucinated:    {counts['hallucinated']}")
     print(f"Tokens:          in {tokens_in}, out {tokens_out}")
+    print("--- Validation ---")
+    print(f"Auto-processed:  {auto}/{evaluated}")
+    print(f"Silent errors:   {review['auto_with_errors']}")
+    print(f"Caught:          {review['caught']}")
+    print(f"False alarms:    {review['false_alarm']}")
 
     run = {
         "timestamp": datetime.now().isoformat(timespec="seconds"),
@@ -119,6 +143,7 @@ def evaluate(prompt_version: str, model: str = "claude-haiku-5-5") -> dict:
         "parsed": parsed_ok,
         "counts": counts,
         "per_field": dict(per_field),
+        "review": review,
         "tokens_in": tokens_in,
         "tokens_out": tokens_out,
         "errors": errors,
