@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Účetnictví Plus s.r.o.",
+  "ico": "67965776",
+  "amount_due": 167397.0,
+  "vat": 29052.45,
+  "currency": "CZK",
+  "due_date": "2026-08-03"
+}

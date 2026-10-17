@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Northgate Cloud Ltd",
+  "ico": null,
+  "amount_due": 2070.76,
+  "vat": 0.0,
+  "currency": "GBP",
+  "due_date": "2026-08-05"
+}

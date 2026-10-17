@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Macinatura Veneta S.r.l.",
+  "ico": null,
+  "amount_due": 988.05,
+  "vat": 0.0,
+  "currency": "EUR",
+  "due_date": "2026-09-10"
+}

@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Budai Tárhely Zrt.",
+  "ico": null,
+  "amount_due": 773.69,
+  "vat": 0.0,
+  "currency": "EUR",
+  "due_date": "2026-09-04"
+}

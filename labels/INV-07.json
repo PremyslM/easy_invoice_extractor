@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Severní software a.s.",
+  "ico": "96542004",
+  "amount_due": 26789.4,
+  "vat": 4649.4,
+  "currency": "CZK",
+  "due_date": "2026-09-13"
+}

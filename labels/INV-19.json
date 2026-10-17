@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Nordlicht Software AG",
+  "ico": null,
+  "amount_due": 7114.89,
+  "vat": 914.36,
+  "currency": "EUR",
+  "due_date": "2026-10-25"
+}

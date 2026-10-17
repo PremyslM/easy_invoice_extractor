@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Vltava Digital a.s.",
+  "ico": "80236057",
+  "amount_due": 509454.09,
+  "vat": 82411.13,
+  "currency": "CZK",
+  "due_date": "2026-11-02"
+}

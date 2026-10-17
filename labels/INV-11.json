@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Kavárenské systémy s.r.o.",
+  "ico": "65421433",
+  "amount_due": 30795.0,
+  "vat": 5344.5,
+  "currency": "CZK",
+  "due_date": "2026-10-16"
+}

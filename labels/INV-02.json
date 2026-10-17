@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Pražská pražírna s.r.o.",
+  "ico": "39720616",
+  "amount_due": 56518.0,
+  "vat": 7864.38,
+  "currency": "CZK",
+  "due_date": "2026-07-15"
+}

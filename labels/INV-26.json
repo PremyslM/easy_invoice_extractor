@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Brightfield Data Corp.",
+  "ico": null,
+  "amount_due": 12043.53,
+  "vat": 0.0,
+  "currency": "USD",
+  "due_date": "2026-11-02"
+}

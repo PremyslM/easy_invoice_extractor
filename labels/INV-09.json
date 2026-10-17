@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Datová laboratoř s.r.o.",
+  "ico": "57033749",
+  "amount_due": 22197.3,
+  "vat": 3147.3,
+  "currency": "CZK",
+  "due_date": "2026-08-29"
+}

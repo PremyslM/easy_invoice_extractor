@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Thames Analytics LLP",
+  "ico": null,
+  "amount_due": 28823.2,
+  "vat": 4803.87,
+  "currency": "GBP",
+  "due_date": "2026-10-04"
+}

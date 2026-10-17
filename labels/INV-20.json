@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Donau Data GmbH",
+  "ico": null,
+  "amount_due": 907.85,
+  "vat": 0.0,
+  "currency": "EUR",
+  "due_date": "2026-07-23"
+}

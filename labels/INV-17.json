@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Bergmann Röstwerk GmbH & Co. KG",
+  "ico": null,
+  "amount_due": 986.11,
+  "vat": 102.77,
+  "currency": "EUR",
+  "due_date": "2026-08-07"
+}

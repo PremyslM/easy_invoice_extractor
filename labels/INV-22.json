@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Bałtyk Dane sp. z o.o.",
+  "ico": null,
+  "amount_due": 3105.46,
+  "vat": 0.0,
+  "currency": "PLN",
+  "due_date": "2026-08-30"
+}

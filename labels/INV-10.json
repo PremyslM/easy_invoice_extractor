@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Vlasta Kučerová",
+  "ico": "92698441",
+  "amount_due": 212420.0,
+  "vat": 0.0,
+  "currency": "CZK",
+  "due_date": "2026-08-20"
+}

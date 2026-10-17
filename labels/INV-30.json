@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Studio Mlýnek s.r.o.",
+  "ico": "64572951",
+  "amount_due": 116473.0,
+  "vat": 20214.26,
+  "currency": "CZK",
+  "due_date": "2026-10-21"
+}

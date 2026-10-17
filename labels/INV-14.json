@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Tatranská dátová a.s.",
+  "ico": "80872028",
+  "amount_due": 1684.95,
+  "vat": 299.46,
+  "currency": "EUR",
+  "due_date": "2026-09-09"
+}

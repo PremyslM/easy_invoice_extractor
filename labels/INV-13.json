@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Dunaj Soft a.s.",
+  "ico": "50188751",
+  "amount_due": 1223.74,
+  "vat": 0.0,
+  "currency": "EUR",
+  "due_date": "2026-10-15"
+}

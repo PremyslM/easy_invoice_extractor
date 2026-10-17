@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Moravská logistika s.r.o.",
+  "ico": "76234550",
+  "amount_due": 244807.0,
+  "vat": 42487.2,
+  "currency": "CZK",
+  "due_date": "2026-10-10"
+}

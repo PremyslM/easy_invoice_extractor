@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Lakeview Labeling Corp.",
+  "ico": null,
+  "amount_due": 6078.06,
+  "vat": 495.46,
+  "currency": "USD",
+  "due_date": "2026-11-01"
+}

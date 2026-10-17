@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Wiener Kaffeesysteme GmbH",
+  "ico": null,
+  "amount_due": 2422.17,
+  "vat": 395.96,
+  "currency": "EUR",
+  "due_date": "2026-09-24"
+}

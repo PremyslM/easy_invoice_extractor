@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Datenwerk GmbH",
+  "ico": null,
+  "amount_due": 1992.28,
+  "vat": 0.0,
+  "currency": "EUR",
+  "due_date": "2026-11-05"
+}

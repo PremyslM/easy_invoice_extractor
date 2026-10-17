@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Zelený bod s.r.o.",
+  "ico": "90555236",
+  "amount_due": 202172.0,
+  "vat": 34177.35,
+  "currency": "CZK",
+  "due_date": "2026-07-16"
+}

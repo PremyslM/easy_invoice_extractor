@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Kancelářské potřeby Hradec s.r.o.",
+  "ico": "47378476",
+  "amount_due": 27957.0,
+  "vat": 4716.71,
+  "currency": "CZK",
+  "due_date": "2026-10-12"
+}

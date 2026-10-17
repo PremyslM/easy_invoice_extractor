@@ -1,0 +1,9 @@
+{
+  "document_type": "invoice",
+  "supplier": "Malá Fatra IT a.s.",
+  "ico": "10469737",
+  "amount_due": 1559.9,
+  "vat": 0.0,
+  "currency": "EUR",
+  "due_date": "2026-08-22"
+}
