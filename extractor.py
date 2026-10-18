@@ -63,5 +63,5 @@ def extract(file_path: str, prompt_version: str, model: str = "claude-haiku-5-5"
     return {
         "raw_text": text,
         "input_tokens": response.usage.input_tokens,
-        "output_tokens": response.usage.input_tokens,
+        "output_tokens": response.usage.output_tokens,
     }

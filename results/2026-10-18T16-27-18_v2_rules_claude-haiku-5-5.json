@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-10-18T16:27:18",
+  "git_commit": "69fd1dd",
+  "prompt_version": "v2_rules",
+  "model": "claude-haiku-5-5",
+  "n_invoices": 30,
+  "strict_json": 25,
+  "parsed": 30,
+  "counts": {
+    "correct": 208,
+    "wrong": 1,
+    "missed": 1,
+    "hallucinated": 0
+  },
+  "per_field": {
+    "document_type": {
+      "correct": 30,
+      "total": 30
+    },
+    "supplier": {
+      "correct": 30,
+      "total": 30
+    },
+    "ico": {
+      "correct": 30,
+      "total": 30
+    },
+    "amount_due": {
+      "correct": 30,
+      "total": 30
+    },
+    "vat": {
+      "correct": 29,
+      "total": 30
+    },
+    "currency": {
+      "correct": 29,
+      "total": 30
+    },
+    "due_date": {
+      "correct": 30,
+      "total": 30
+    }
+  },
+  "review": {
+    "auto_ok": 25,
+    "auto_with_errors": 2,
+    "caught": 0,
+    "false_alarm": 3
+  },
+  "tokens_in": 108120,
+  "tokens_out": 10050,
+  "errors": [
+    {
+      "invoice": "INV-10.pdf",
+      "field": "vat",
+      "type": "missed",
+      "expected": 0.0,
+      "actual": null
+    },
+    {
+      "invoice": "INV-21.jpg",
+      "field": "currency",
+      "type": "wrong",
+      "expected": "EUR",
+      "actual": "CZK"
+    }
+  ]
+}
